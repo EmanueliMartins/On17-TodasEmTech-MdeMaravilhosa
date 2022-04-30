@@ -4,10 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  }
-
-  ul {
-    padding: 0;
+    color:#674582;
   }
   
   li {
@@ -35,6 +32,13 @@
   .navbar__logo {
     max-width: 200px;
   }
+
+  .navbar__nav > li {
+    margin: 0 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
   
   .navbar__box {
     display: flex;
@@ -60,25 +64,199 @@
   
   /* HEADER */
   
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../img/ruth-rocha-03.webp);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
   
-  
-  
+  }
+
+  .header h1 {
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:40px;
+  }
   /* --- BOTAO --- */
-    
+  .button {
+    margin: 60px auto;
+    text-align: center;
+  
+  }
+  
+  
+  .button__link {
+    text-transform: uppercase;
+    background: #c083b9;
+    border-radius: 10px;
+    padding: 19px 66px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
   
   
   
   /* SECAO Maravilhosa */
   
+  .container {
+    max-width: 1260px;
+    margin:0 auto;
+
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 36px auto;
+  }
   
+  .minibio {
+    display:flex;
+    max-width: 954px;
+    margin: 0 auto;
+    
+  }
+  .minibio__img {
+    width: 210px;
+    height: 210px;
+    border-radius: 16px;
+    background-color: #674582;
+    margin-right: 48px;
+  }
   
+  .minibio p{
+   width: 80%;
+   font-size: 30px;
+  }
+  
+  .historia h3 {
+    text-align: center;
+    font-size: 30px;
+
+  }
+
+  .historia p {
+    width: 100%;
+    font-size: 30px;
+    text-align: justify;
+  }
+  .historia-img {
+    width: 100%;
+
+  }
+
+  .citacao {
+    font-size: 36px;
+    border: 1px solid #674582;
+    padding: 36px;
+    line-height: 50px;
+    margin: 48px auto;
+  }
   /* AUTORA */
+  .autora {
+    background-color: #E4B7E5;
+    height: 260px;
+    display: flex;
+    /* Garante que está centralizado no eixo X */
+    justify-content: center;
+  }
   
+  .autora__container{ 
+    display: flex;
+  }
+  
+  .autora__img {
+    max-width: 260px;
+  }
+  
+  .autora__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 36px;
+  }
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
 
   
   
   /* FOOTER */
+  .footer{
+    background-color: #323534;
+    color: #f3f3f3;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .footer ul{
+    text-align: center;
+    padding: 0;
+  }
+  
+  .footer ul a:hover{
+    color: #674582;
+  }
+  
+  .container-logo-footer{
+    margin: 0 50px;
+  }
+  
+  .container-icones-footer{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-icones-footer img{
+    max-width: 70%;
+  }
+  
+  .container-icones-footer img:hover{
+    box-shadow: 0 0 15px black;
+  }
+
+
+  .rodape p{
+    color: #ffffff;
+    text-align: center;
+  }
+   .rodape {
+
+   
+    background-color: #674582;
+    padding: 2rem;
+
+   }
   
   /* MEDIA QUERY */
   
+  @media screen and (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 656px;
+    }
+
+  .header{
+    background-position: center;
+  }
+
+  .minibio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
